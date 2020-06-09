@@ -1,0 +1,47 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">    
+    <title>Fieldset</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/estilos-Bootstrap_02.css">
+		<script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    
+  <body>
+    <div class="container">
+    <form class="form-inline" action="/action_page.php">
+      
+        <legend>Favourites Poll:</legend>
+        <div class="row">
+        <fieldset class="col-5 border border-info rounded mr-2">
+        <label for="favpets">Favourite Pets:</label><br>
+        <!--El lector no lee los labels con Tab, solo despues de pincharlo. 
+        No hace falta poner aria checked for 1, el lector lee automaticamente cual esta seleccionado y cual vacio-->
+        <input type="radio" id="favpets" name="favpets" checked aria-label="checked for one"><br>
+        <input type="radio" id="favpets" name="favpets"><br>
+        <input type="radio" id="favpets" name="favpets"><br>
+        <input type="radio" id="favpets" name="favpets"><br>
+      </fieldset>
+      <fieldset class="col-5 border border-info rounded">
+        <label for="favfood">Favourite Food:</label><br>
+        <input type="checkbox" id="favfood" name="favfood"><br>
+        <input type="checkbox" id="favfood" name="favfood"><br>
+        <input type="checkbox" id="favfood" name="favfood" checked aria-label="checked for three"><br>
+        <input type="checkbox" id="favfood" name="favfood"><br>
+        </fieldset>
+
+        <input type="submit" value="Submit" class="mt-3">
+      
+    </div>
+    </form>
+  </div>
+
+
+    
+  </body>
+</html>
