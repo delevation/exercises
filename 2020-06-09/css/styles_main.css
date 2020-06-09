@@ -1,0 +1,21 @@
+body{
+    background-color: #b2aa8e;
+}
+h1, h3{
+    color: #0c1b33;
+}
+
+fieldset{
+    background-color: #03b5aa;
+}
+.foto{
+    width: 40%;
+    display: block;
+    margin: 20px auto;    
+}
+.btnsend{
+    background-color: #dbfe87;
+}
+.btnreset{
+    background-color: #7a306c;
+}

@@ -1,0 +1,161 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">    
+    <title>Formulario detalles propiedad</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/styles_main.css">
+		<script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Viviendas</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <div class="foto" aria-label="imagen"><img src="images/house_key.jpg" class="img-fluid" alt="Imagen de una puerta con llave"></div>
+
+    <div class="container mb-4 d-flex justify-content-center">
+      <div class="row">
+
+    <form class="" action="/action_page.php">
+      
+        <legend><h1 class="mb-4">Formulario venta/compra/alquilar propiedad:</h1></legend>
+        
+        <fieldset class="col-12 border border-dark rounded mb-4 p-4">
+          <h3>Datos de contacto</h3><hr>
+          <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" class="form-control" id="nombre">
+          </div>
+          <div class="form-group">
+            <label for="apellido">Apellido:</label>
+            <input type="text" class="form-control" id="apellido">
+          </div>
+          <div class="form-group">
+              <label for="email">Correo electronico:</label>
+              <input type="email" class="form-control" id="email">
+          </div>
+          <div class="form-group">
+              <label for="telefono">Teléfono:</label>
+              <input type="tel" class="form-control" id="telefono">
+          </div>
+        </fieldset>
+
+          <fieldset class="col-12 border border-info rounded mb-4 p-4">
+            <h3>Datos de la vivienda</h3><hr>
+            <div class="form-group">
+              <label for="operacion">Operación:</label>
+              <select class="form-control" id="operacion">
+                <option>Venta</option>
+                <option>Compra</option>
+                <option>Alquiler</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="direccion">Dirección:</label>
+              <input type="text" class="form-control" id="direccion">
+              </div>
+              <div class="form-group">
+              <label for="municipio">Municipio:</label>
+              <input type="text" class="form-control" id="municipio">
+              </div>
+              <div class="form-group">
+                <label for="operacion">Tipo de vivienda:</label>
+                <select class="form-control" id="operacion">
+                  <option>Piso</option>
+                  <option>Casa de pueblo</option>
+                  <option>Oficinas</option>
+                  <option>Dùplex</option>
+                  <option>Rustico</option>
+                  <option>Planta baja</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="metros">Metros de la vivienda (m2):</label>
+                <input type="text" class="form-control" id="metros">
+              </div>
+              <div class="form-group">Garaje:
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="garaje" id="garaje1" value="option1" checked>
+                <label class="form-check-label" for="garaje1">
+                  Si
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="garaje" id="garaje2" value="option2">
+                <label class="form-check-label" for="garaje2">
+                  No
+                </label>
+              </div>
+              </div>   
+              
+            </fieldset>        
+      
+            <fieldset class="col-12 border border-info rounded mb-4 p-4">
+              <h3>Condición de la vivienda:</h3><hr>
+              <div class="form-group">
+                <label for="ano">Año de construcción:</label>
+                <input type="text" class="form-control" id="ano">
+              </div>
+              <div class="form-group">
+                <label for="tiempo">Cuanto tiempo eres un proprietario?</label>
+                <input type="text" class="form-control" id="tiempo">
+              </div>
+              <div class="form-group">
+                <label for="otros">Si la vivienda necesita algunas reparaciones, describa las:</label>
+                <textarea class="form-control" id="otros" rows="3"></textarea>
+              </div>
+              
+            </fieldset>
+          <div class="row d-flex justify-content-around">
+            <input type="button" value="Enviar" class="col-6 btn-lg btnsend btn-block mt-3">
+            <input type="button" value="Reiniciar" class="col-4 btn-lg text-white btnreset btn-block mt-3">
+        </div>
+      
+    </div>
+    </form>
+  </div>
+  </div>
+
+
+    
+  </body>
+</html>
